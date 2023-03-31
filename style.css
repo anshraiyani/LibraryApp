@@ -52,9 +52,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 300px;
+    height: 400px;
     background-color: #085a60;
     border-radius: 15px;
+    border: 2px solid rgb(139, 176, 192);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #new-book-form div{
@@ -69,7 +71,23 @@ body {
 
 #new-book-form input{
     margin-top: 5px;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
+    width: 250px;
     border: none;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+}
+
+.submit{
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background-color: #062c2e;
+    color: white;
 }
