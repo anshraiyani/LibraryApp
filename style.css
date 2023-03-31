@@ -6,7 +6,8 @@
 }
 
 body {  
-    background-image: linear-gradient(to top, #053337, #085a60, #0b858c, #0eb2bb, #12e2eb);
+    /* background-image: linear-gradient(to top, #053337, #085a60, #0b858c, #0eb2bb, #12e2eb); */
+    background-color: #0b858c;
     height: 100vh;
     width: 100vw;
     font-family: "Mulish", sans-serif;
@@ -80,6 +81,7 @@ body {
 }
 
 .submit{
+    margin-top: 30px;
     height: 40px;
     width: 70px;
     font-size: 15px;
@@ -90,4 +92,24 @@ body {
 .submit:hover{
     background-color: #062c2e;
     color: white;
+}
+
+.library{
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    height: 22vh;
+    width: 20vw;
+    background-color: rgb(118, 176, 178);
+    color: #053337;
+    border: 5px solid rgb(146, 238, 243);
+    border-radius: 10px;
 }
