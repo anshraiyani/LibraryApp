@@ -1,5 +1,5 @@
 # LibraryApp
-Frontend project on library Mmanagement system. <br />
+Frontend project on library Management system. <br />
 Made with simple HTML, CSS and Javascript.
 ### How it works?
 -> You can add your books by clicking on `New Book` button.<br />
