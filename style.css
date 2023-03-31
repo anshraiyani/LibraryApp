@@ -7,7 +7,7 @@
 
 body {  
     /* background-image: linear-gradient(to top, #053337, #085a60, #0b858c, #0eb2bb, #12e2eb); */
-    background-color: #0b858c;
+    background-color: #b0e6e9;
     height: 100vh;
     width: 100vw;
     font-family: "Mulish", sans-serif;
@@ -38,7 +38,7 @@ body {
 }
 
 .new-book:hover{
-    background: rgb(146, 238, 243);
+    background: rgb(119, 198, 202);
 }
 
 .form{
@@ -96,8 +96,11 @@ body {
 
 .library{
     margin-top: 50px;
-    height: 100%;
+    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .book-card{
@@ -106,10 +109,48 @@ body {
     align-items: center;
     justify-content: space-around;
     margin: 20px;
-    height: 22vh;
-    width: 20vw;
+    height: 30vh;
+    width: 200px;
     background-color: rgb(118, 176, 178);
     color: #053337;
     border: 5px solid rgb(146, 238, 243);
     border-radius: 10px;
+}
+
+.book-card h2, h3{
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+}
+
+.remove-btn{
+    height: 25px;
+    width: 70px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: rgb(175, 87, 87);
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    background-color: rgb(175, 87, 87);
+    color: white;
+}
+
+.read-btn{
+    height: 25px;
+    width: 105px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.read-btn:hover{
+    background: blue;
+    color: white;
 }
