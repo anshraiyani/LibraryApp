@@ -62,14 +62,14 @@ function showPagesTextError(){
     if(pagesNumbers.validity.valueMissing){
         pagesError.textContent="This field cannot be empty"
     }
-    else if(pagesNumbers.validity.typeMismatch){
+    else if(pagesNumbers.validity.badInput){
         pagesError.textContent="Please enter a number"
     }
-    else if(pagesNumbers.validity.tooShort){
-        pagesError.textContent=`pages should be atleast${pagesNumbers.min}, you entered ${pagesNumbers.value.length}`
+    else if(pagesNumbers.validity.rangeUnderflow){
+        pagesError.textContent=`pages should be atleast ${pagesNumbers.min}, you entered ${pagesNumbers.value}`
     }
-    else if(pagesNumbers.validity.tooLong){
-        pagesError.textContent=`pages should be atmost${pagesNumbers.max}, you entered ${pagesNumbers.value.length}`
+    else if(pagesNumbers.validity.rangeOverflow){
+        pagesError.textContent=`pages should be atmost ${pagesNumbers.max}, you entered ${pagesNumbers.value}`
     }
     pagesError.className="error active"
 }
